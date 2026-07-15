@@ -1,0 +1,11 @@
+model_tag,exp_name,exp_group,layer,signed_effect_mean,signed_effect_ci_lo,signed_effect_ci_hi,note
+qwen25_3b,crossed_dist_SP_to_PS,crossed_distractor_patch,0,1.3337651466836735,1.2783148317920918,1.3874611367984695,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,crossed_dist_SS_to_PP,crossed_distractor_patch,0,1.4276347257653061,1.3657699896364797,1.487743144132653,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,dist_pl_to_sg,distractor_patch,0,1.3379902742346939,1.2822843590561224,1.3907879264987244,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,dist_sg_to_pl,distractor_patch,0,3.312320631377551,3.209883709343112,3.408085538903061,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,same_num_SP_to_PS_dist,same_number_control,0,1.3337651466836735,1.2783148317920918,1.3874611367984695,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,same_num_SS_to_PP_subj,same_number_control,0,6.612842793367347,6.4483742227359695,6.769091796874999,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,self_patch_SP,self_patch,0,0.0,0.0,0.0,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,self_patch_SS,self_patch,0,0.0,0.0,0.0,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,subj_pl_to_sg,subject_patch,0,9.38803411989796,9.252453364158164,9.525365712691325,Layer 0 reflects embedding-level token replacement; report separately.
+qwen25_3b,subj_sg_to_pl,subject_patch,0,8.195870535714286,7.999512216996174,8.38811882174745,Layer 0 reflects embedding-level token replacement; report separately.

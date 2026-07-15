@@ -1,0 +1,3 @@
+model_tag,direction,position,alpha,effect_mean,effect_ci_lo,effect_ci_hi,n_items
+qwen25_3b,subject_train_split,final,-1.0,2.3819389097332517,2.332660636852949,2.4334381744259006,195
+qwen25_3b,subject_train_split,final,1.0,-1.313688509595263,-1.3688479567098093,-1.2654743105989674,195

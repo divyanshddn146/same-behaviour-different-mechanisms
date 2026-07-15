@@ -1,0 +1,7 @@
+model_tag,direction,position,layer,alpha,real_mean,real_ci_lo,real_ci_hi,note
+llama32_3b,distractor,distractor,0,1.0,-0.054767219387755105,-0.06848094706632653,-0.04067332987882655,Layer 0: embedding-level. Report separately.
+llama32_3b,distractor,final,0,1.0,0.1332110969387755,0.11096739477040816,0.1556750239158163,Layer 0: embedding-level. Report separately.
+llama32_3b,distractor,subject,0,1.0,7.694395727040816,7.58027194276148,7.8029884805484695,Layer 0: embedding-level. Report separately.
+llama32_3b,subject,distractor,0,1.0,-0.027503188775510203,-0.04015963807397959,-0.014845742984693888,Layer 0: embedding-level. Report separately.
+llama32_3b,subject,final,0,1.0,0.1301219706632653,0.11078005420918367,0.1509895169005102,Layer 0: embedding-level. Report separately.
+llama32_3b,subject,subject,0,1.0,7.693459024234694,7.580828483737245,7.8036725725446425,Layer 0: embedding-level. Report separately.

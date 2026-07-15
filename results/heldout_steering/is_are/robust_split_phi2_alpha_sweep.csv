@@ -1,0 +1,3 @@
+model_tag,direction,position,alpha,effect_mean,effect_ci_lo,effect_ci_hi,n_items
+phi2,subject_train_split,final,-1.0,3.7965405210963556,3.741324603445181,3.850117207965741,195
+phi2,subject_train_split,final,1.0,-3.256658808232537,-3.3389375499973024,-3.1803083627415254,195

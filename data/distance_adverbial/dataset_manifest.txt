@@ -1,0 +1,105 @@
+================================================================================
+ADVERBIAL DISTANCE AGREEMENT DATASET
+================================================================================
+
+Purpose:
+  Increase subject-to-verb distance without adding extra noun attractors.
+
+Template:
+  The {subject} of the {distractor}{adverbial_filler}
+
+Target next-token auxiliaries:
+  be_present: is / are
+  be_past:    was / were
+
+Distance fillers:
+  short      | level=0 | filler='' | base template
+  medium     | level=1 | filler=', quite clearly,' | short parenthetical adverbial
+  long       | level=2 | filler=', quite clearly, rather obviously, as expected,' | longer parenthetical adverbial chain
+  extra_long | level=3 | filler=', quite clearly, rather obviously, as expected, at least for now, in most cases,' | extra-long parenthetical adverbial chain
+
+Important design choices:
+  - No extra noun attractors in the filler.
+  - No trailing space in prompt.
+  - Score target as prompt + ' is', prompt + ' are', etc.
+  - Behavioural audit required before causal analysis.
+
+Full counts:
+aux_pair    distance_bucket  condition
+be_past     extra_long       PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+            long             PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+            medium           PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+            short            PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+be_present  extra_long       PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+            long             PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+            medium           PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+            short            PP           1640
+                             PS           1640
+                             SP           1640
+                             SS           1640
+dtype: int64
+
+Eval counts:
+aux_pair    distance_bucket  condition
+be_past     extra_long       PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+            long             PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+            medium           PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+            short            PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+be_present  extra_long       PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+            long             PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+            medium           PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+            short            PP           400
+                             PS           400
+                             SP           400
+                             SS           400
+dtype: int64
+
+Mean approximate distances:
+                 n_words_prompt  approx_subject_to_pred_words  approx_distractor_to_pred_words
+distance_bucket                                                                               
+extra_long                 24.0                          23.0                             20.0
+long                       15.0                          14.0                             11.0
+medium                      9.0                           8.0                              5.0
+short                       5.0                           4.0                              1.0

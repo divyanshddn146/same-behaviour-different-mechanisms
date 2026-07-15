@@ -1,0 +1,7 @@
+model_tag,direction,position,layer,alpha,real_mean,real_ci_lo,real_ci_hi,note
+phi2,distractor,distractor,0,1.0,-0.10226474419618264,-0.17951734677339212,-0.033700024959368614,Layer 0: embedding-level. Report separately.
+phi2,distractor,final,0,1.0,0.04115599852341872,0.004882741952553773,0.07849998681973187,Layer 0: embedding-level. Report separately.
+phi2,distractor,subject,0,1.0,4.889808918879583,4.771183582330361,5.0130528179193155,Layer 0: embedding-level. Report separately.
+phi2,subject,distractor,0,1.0,-0.17235784530639647,-0.24746266933587882,-0.10495465156359551,Layer 0: embedding-level. Report separately.
+phi2,subject,final,0,1.0,0.035577453711094,0.005579085044371776,0.0661173801544385,Layer 0: embedding-level. Report separately.
+phi2,subject,subject,0,1.0,5.60081499295357,5.472303139613225,5.731958598479247,Layer 0: embedding-level. Report separately.

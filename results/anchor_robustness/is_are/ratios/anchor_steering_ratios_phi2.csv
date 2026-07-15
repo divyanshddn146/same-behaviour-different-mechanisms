@@ -1,0 +1,2 @@
+model_tag,anchor_template,condition,subject_effect,final_effect,subject_final_ratio,pattern
+phi2,ALL,SS+SP+PS+PP,1.8790317943259596,3.2821010327387246,0.5725088215087686,final-integrated

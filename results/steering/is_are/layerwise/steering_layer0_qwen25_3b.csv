@@ -1,0 +1,7 @@
+model_tag,direction,position,layer,alpha,real_mean,real_ci_lo,real_ci_hi,note
+qwen25_3b,distractor,distractor,0,1.0,-0.0030048076923076925,-0.07215945512820512,0.057964743589743524,Layer 0: embedding-level. Report separately.
+qwen25_3b,distractor,final,0,1.0,-0.10200320512820513,-0.13463541666666667,-0.06740084134615389,Layer 0: embedding-level. Report separately.
+qwen25_3b,distractor,subject,0,1.0,8.09629407051282,7.95158203125,8.239224258814103,Layer 0: embedding-level. Report separately.
+qwen25_3b,subject,distractor,0,1.0,-0.007712339743589744,-0.07215745192307692,0.04276792868589733,Layer 0: embedding-level. Report separately.
+qwen25_3b,subject,final,0,1.0,-0.08076923076923077,-0.11077774439102564,-0.04805388621794874,Layer 0: embedding-level. Report separately.
+qwen25_3b,subject,subject,0,1.0,8.093389423076923,7.9464938902243585,8.239363481570512,Layer 0: embedding-level. Report separately.

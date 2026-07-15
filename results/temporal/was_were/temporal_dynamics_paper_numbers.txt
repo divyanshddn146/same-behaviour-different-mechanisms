@@ -1,0 +1,33 @@
+TEMPORAL DYNAMICS — PAPER NUMBERS
+==============================================================================
+Quantifying source vs final-token controllability across layers.
+Final onset threshold = 1.5 (signed effect in logit units).
+
+Model          n_layers    Src AUC  Final AUC   Src/Fin  Onset@1.5  Onset@1.0  Onset@2.0
+------------------------------------------------------------------------------
+phi2                 31     175.76      99.63      1.76x         15         12         15
+llama32_3b           27     148.89      86.31      1.73x         13         13         13
+qwen25_3b            35     249.88      42.16      5.93x         28         26         29
+
+Source AUC components (subject + of):
+Model            Subject AUC     Of AUC      Total
+--------------------------------------------------
+phi2                   85.10      90.66     175.76
+llama32_3b             84.07      64.82     148.89
+qwen25_3b             155.93      93.95     249.88
+
+Per-layer peaks (layer of maximum effect, peak value):
+Model               Subj peak        Of peak     Final peak
+------------------------------------------------------------
+phi2           L1=4.26     L4=4.98     L30=8.48
+llama32_3b     L1=6.32     L1=5.00     L27=11.38
+qwen25_3b      L1=6.89     L6=4.09     L34=7.43
+
+==============================================================================
+Paper-ready sentences:
+
+Across the network, Qwen2.5-3B has source/final AUC ratio 5.93x, vs 1.76x for Phi-2 and 1.73x for Llama-3.2-3B.
+
+Final-token onset layer (first layer where the final-position signed effect exceeds 1.5) is layer 28 in Qwen, vs layer 15 in Phi-2 and 13 in Llama-3.2-3B.
+
+This quantifies the temporal asymmetry: Qwen retains source-side controllability across a substantially larger fraction of the network and the final-token representation becomes a strong steering target only in the late layers.

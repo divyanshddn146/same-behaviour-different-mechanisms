@@ -1,0 +1,11 @@
+model_tag,exp_name,exp_group,layer,signed_effect_mean,signed_effect_ci_lo,signed_effect_ci_hi,note
+phi2,crossed_dist_SP_to_PS,crossed_distractor_patch,0,1.5629819894448305,1.5191196660506419,1.6081884664755601,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,crossed_dist_SS_to_PP,crossed_distractor_patch,0,1.1655456200624124,1.1267896240796798,1.205698561607263,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,dist_pl_to_sg,distractor_patch,0,1.5656647144219815,1.5221577431605413,1.6094495443197396,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,dist_sg_to_pl,distractor_patch,0,4.227376954983442,4.143146864328629,4.308488437884893,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,same_num_SP_to_PS_dist,same_number_control,0,1.5629819894448305,1.5191196660506419,1.6081884664755601,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,same_num_SS_to_PP_subj,same_number_control,0,2.901707690801376,2.7904908499962247,3.018340795957125,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,self_patch_SP,self_patch,0,0.0,0.0,0.0,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,self_patch_SS,self_patch,0,0.0,0.0,0.0,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,subj_pl_to_sg,subject_patch,0,7.159959482535338,7.008962256235954,7.315587226610917,Layer 0 reflects embedding-level token replacement; report separately.
+phi2,subj_sg_to_pl,subject_patch,0,4.892426143548428,4.742308639929845,5.037277228220915,Layer 0 reflects embedding-level token replacement; report separately.

@@ -1,0 +1,11 @@
+model_tag,exp_name,exp_group,layer,signed_effect_mean,signed_effect_ci_lo,signed_effect_ci_hi,note
+llama32_3b,crossed_dist_SP_to_PS,crossed_distractor_patch,0,2.246895032051282,2.1861768830128208,2.304854767628205,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,crossed_dist_SS_to_PP,crossed_distractor_patch,0,2.289122596153846,2.2272230568910256,2.3506620592948715,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,dist_pl_to_sg,distractor_patch,0,2.2419070512820514,2.182414362980769,2.2995427684294873,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,dist_sg_to_pl,distractor_patch,0,2.5155448717948716,2.441161858974359,2.5879071514423075,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,same_num_SP_to_PS_dist,same_number_control,0,2.246895032051282,2.1861768830128208,2.304854767628205,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,same_num_SS_to_PP_subj,same_number_control,0,6.436478365384615,6.277771935096154,6.590184795673077,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,self_patch_SP,self_patch,0,0.0,0.0,0.0,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,self_patch_SS,self_patch,0,0.0,0.0,0.0,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,subj_pl_to_sg,subject_patch,0,8.10244391025641,7.9859294871794875,8.212223056891027,Layer 0 reflects embedding-level token replacement; report separately.
+llama32_3b,subj_sg_to_pl,subject_patch,0,6.934755608974359,6.763943810096154,7.097921674679487,Layer 0 reflects embedding-level token replacement; report separately.

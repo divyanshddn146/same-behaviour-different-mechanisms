@@ -1,0 +1,2 @@
+model_tag,anchor_template,condition,subject_effect,final_effect,subject_final_ratio,pattern
+llama32_3b,ALL,SS+SP+PS+PP,1.656788330078125,2.735191661693432,0.6057302503811971,final-integrated

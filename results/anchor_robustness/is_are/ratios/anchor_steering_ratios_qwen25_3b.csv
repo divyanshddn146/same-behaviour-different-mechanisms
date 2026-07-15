@@ -1,0 +1,2 @@
+model_tag,anchor_template,condition,subject_effect,final_effect,subject_final_ratio,pattern
+qwen25_3b,ALL,SS+SP+PS+PP,2.7004976981026783,2.028429469517299,1.3313244254656338,source-localized

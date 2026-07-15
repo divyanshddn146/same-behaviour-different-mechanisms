@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Model/cache files
+.cache/
+hf_cache/
+models/
+*.pt
+*.pth
+*.pkl
+*.pickle
+
+# Large raw steering/intervention outputs
+results/steering/**/steering_raw_*.csv
+results/patching/**/patching_raw_by_item_layer_*.csv
+results/all_position_steering/**/test3_allpos_raw_*.csv
+results/heldout_steering/**/robust_split_*_raw.csv
+results/anchor_robustness/**/anchor_steering_raw_*.csv
+results/distance_stress/steering/**/distance_steering_raw_*.csv
+results/distance_stress/all_position/**/allpos_distance_raw_*.csv
+results/**/*directions*.pkl
+results/**/*cache*.pt

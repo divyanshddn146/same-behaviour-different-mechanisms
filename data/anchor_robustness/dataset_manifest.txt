@@ -1,0 +1,59 @@
+================================================================================
+ANCHOR ROBUSTNESS AGREEMENT DATASET
+================================================================================
+
+Purpose:
+  Test whether controlled agreement results are specific to 'in question'.
+
+Template:
+  The {subject} of the {distractor} {anchor}
+
+Target next-token auxiliaries:
+  be_present: is / are
+  be_past:    was / were
+
+Anchors:
+  in_question          -> in question
+  under_review         -> under review
+  on_duty              -> on duty
+  on_site              -> on site
+  in_charge            -> in charge
+  at_work              -> at work
+  on_call              -> on call
+  under_observation    -> under observation
+
+Full dataset counts:
+aux_pair    anchor_id          condition
+be_past     at_work            PP           1640
+                               PS           1640
+                               SP           1640
+                               SS           1640
+            in_charge          PP           1640
+                                            ... 
+be_present  under_observation  SS           1640
+            under_review       PP           1640
+                               PS           1640
+                               SP           1640
+                               SS           1640
+Length: 64, dtype: int64
+
+Eval dataset counts:
+aux_pair    anchor_id          condition
+be_past     at_work            PP           300
+                               PS           300
+                               SP           300
+                               SS           300
+            in_charge          PP           300
+                                           ... 
+be_present  under_observation  SS           300
+            under_review       PP           300
+                               PS           300
+                               SP           300
+                               SS           300
+Length: 64, dtype: int64
+
+Recommended use:
+  1. Run behavioural audit first.
+  2. Use margin_accuracy and mean_margin as the main forced-choice metrics.
+  3. Use clean margin>0 or margin>1 examples for steering if needed.
+  4. This is a template-anchor robustness check, not a new main dataset.
