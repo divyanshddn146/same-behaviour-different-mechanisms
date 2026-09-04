@@ -1,9 +1,9 @@
 # Causal Layouts of Agreement Control Across Decoder-Only Language Models
 
 **Independent mechanistic interpretability research, 2026**  
-**Manuscript in preparation for ACL Rolling Review / NAACL 2027**
+**Ongoing work, being extended for ACL Rolling Review / NAACL 2027**
 
-📄 **Manuscript:** [PDF](paper/agreement_control_causal_layouts.pdf)
+📄 **Current manuscript:** [PDF](paper/agreement_control_causal_layouts.pdf)
 
 This repository contains the code, controlled datasets, processed result CSVs,
 and figure-generation scripts for a causal study of subject-verb agreement
@@ -16,9 +16,9 @@ the same internal locations across different decoder-only language models.
 
 We study three models:
 
-- **Phi-2** (32 layers, partial RoPE)
-- **Llama-3.2-3B** (28 layers, RoPE)
-- **Qwen2.5-3B** (36 layers, RoPE with long-context scaling)
+* **Phi-2** (32 layers, partial RoPE)
+* **Llama-3.2-3B** (28 layers, RoPE)
+* **Qwen2.5-3B** (36 layers, RoPE with long-context scaling)
 
 The models are evaluated on controlled agreement prompts in which grammatical
 subject number must determine the auxiliary despite an intervening distractor
@@ -26,17 +26,17 @@ noun.
 
 The main result is a cross-model difference in **causal controllability**:
 
-- **Activation patching** shows that agreement control is primarily
+* **Activation patching** shows that agreement control is primarily
   subject-driven rather than distractor-driven in all three models.
-- **Layer-specific linear steering** reveals different positional layouts.
+* **Layer-specific linear steering** reveals different positional layouts.
   Phi-2 and Llama-3.2-3B show comparable subject- and final-position
   controllability, with subject/final ratios of **0.88×** and **0.99×**.
   Qwen2.5-3B is substantially more source-localized, with a ratio of
   **3.76×**.
-- The model ordering persists across held-out items, a `was/were` replication,
+* The model ordering persists across held-out items, a `was/were` replication,
   eight anchor templates, all four subject-distractor number conditions,
   and increased dependency distance.
-- Layer-resolved analyses show substantially later emergence of strong
+* Layer-resolved analyses show substantially later emergence of strong
   final-position controllability in Qwen2.5-3B than in Phi-2 or
   Llama-3.2-3B.
 
@@ -112,23 +112,23 @@ strong final-position controllability substantially later in the network.
 
 The subject/final ordering persists across:
 
-- held-out items
-- `was/were` prompts
-- eight anchor templates
-- all four SS/SP/PS/PP agreement conditions
-- noun-free distance stress
-- shuffled-label steering controls
-- matched-norm random directions
-- opposite-sign steering checks
+* held-out items
+* `was/were` prompts
+* eight anchor templates
+* all four SS/SP/PS/PP agreement conditions
+* noun-free distance stress
+* shuffled-label steering controls
+* matched-norm random directions
+* opposite-sign steering checks
 
 The magnitude of the effects sometimes changes under stress, but the
 cross-model ordering does not reverse in the tested conditions.
 
 ## Main figures
 
-- [Figure 1: Behavioural agreement](figures/paper_main/figure1_behavioural.pdf)
-- [Figure 2: Subject / distractor / final steering](figures/paper_main/figure2_steering_main.pdf)
-- [Figure 3: Localization and robustness](figures/paper_main/figure3_localization_robustness.pdf)
+* [Figure 1: Behavioural agreement](figures/paper_main/figure1_behavioural.pdf)
+* [Figure 2: Subject / distractor / final steering](figures/paper_main/figure2_steering_main.pdf)
+* [Figure 3: Localization and robustness](figures/paper_main/figure3_localization_robustness.pdf)
 
 ## Experimental setup
 
